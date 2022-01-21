@@ -88,10 +88,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Iker\Desktop\sdl2-0-7ExamplesVcWS\sdl2-0-7ExamplesVcWS\sdl2ttf\include;C:\Users\Iker\Desktop\sdl2-0-7ExamplesVcWS\sdl2-0-7ExamplesVcWS\sdl2mixer\include;C:\Users\Iker\Desktop\sdl2-0-7ExamplesVcWS\sdl2-0-7ExamplesVcWS\sdl2image\include;C:\Users\Iker\Desktop\sdl2-0-7ExamplesVcWS\sdl2-0-7ExamplesVcWS\sdl2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Iker\Desktop\sdl2-0-7ExamplesVcWS\sdl2-0-7ExamplesVcWS\sdl2ttf\libs;C:\Users\Iker\Desktop\sdl2-0-7ExamplesVcWS\sdl2-0-7ExamplesVcWS\sdl2mixer\libs;C:\Users\Iker\Desktop\sdl2-0-7ExamplesVcWS\sdl2-0-7ExamplesVcWS\sdl2image\libs;C:\Users\Iker\Desktop\sdl2-0-7ExamplesVcWS\sdl2-0-7ExamplesVcWS\sdl2\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -144,7 +147,9 @@
     <ClCompile Include="graphics.c" />
     <ClCompile Include="imagen.c" />
     <ClCompile Include="soinua.c" />
-    <ClCompile Include="text.c" />
+    <ClCompile Include="text.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Iker\Desktop\SDL2-devel-2.0.20-VC\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ebentoak.h" />
