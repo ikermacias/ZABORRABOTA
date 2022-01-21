@@ -13,5 +13,51 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de encabezado\simpleSdlWrapper">
+      <UniqueIdentifier>{653109c0-c4db-42ac-9f87-ef6b3fd71c70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\simpleSdlWrapper">
+      <UniqueIdentifier>{32c87c7a-5629-465a-8ef2-af49120c8d58}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="01simpleStaticDemoMain.c">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ebentoak.c">
+      <Filter>Archivos de origen\simpleSdlWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics.c">
+      <Filter>Archivos de origen\simpleSdlWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="imagen.c">
+      <Filter>Archivos de origen\simpleSdlWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="soinua.c">
+      <Filter>Archivos de origen\simpleSdlWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="text.c">
+      <Filter>Archivos de origen\simpleSdlWrapper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ebentoak.h">
+      <Filter>Archivos de encabezado\simpleSdlWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics.h">
+      <Filter>Archivos de encabezado\simpleSdlWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="imagen.h">
+      <Filter>Archivos de encabezado\simpleSdlWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="soinua.h">
+      <Filter>Archivos de encabezado\simpleSdlWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="text.h">
+      <Filter>Archivos de encabezado\simpleSdlWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OurTypes.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
